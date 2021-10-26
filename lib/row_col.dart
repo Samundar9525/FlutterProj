@@ -6,31 +6,22 @@ class myapp2 extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(title:Text("ROW and Column CHECK")),
       body: Center(
-        child:  Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children:<Widget>[
-              Container(
-                decoration:BoxDecoration(
-                    borderRadius:BorderRadius.circular(10),
-                    color:Colors.green
-                ),
-                child: Text("GeeksForGeeks",style: TextStyle(color:Colors.white,fontSize:25),),
-              ),
-              Container(
-                decoration:BoxDecoration(
-                    borderRadius:BorderRadius.circular(10),
-                    color:Colors.green
-                ),
-                child: Text("GeeksForGeeks",style: TextStyle(color:Colors.white,fontSize:25),),
-              ),
-              Container(
-                decoration:BoxDecoration(
-                    borderRadius:BorderRadius.circular(10),
-                    color:Colors.green
-                ),
-                child: Text("GeeksForGeeks",style: TextStyle(color:Colors.white,fontSize:25),),
-              )
-            ]
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text("THIS IS COLUMN DEMO",style: TextStyle(fontSize: 15.30,  color: Colors.teal,),),
+            ElevatedButton(onPressed: (){}, child:Text("PRESS ME")),
+
+            Text("THIS IS COLUMN DEMO",style: TextStyle(fontSize: 25.30,  color: Colors.teal,),),
+            ElevatedButton(onPressed: (){}, child:Text("PRESS ME")),
+
+            Text("THIS IS COLUMN DEMO",style: TextStyle(fontSize: 35.30,  color: Colors.teal,),),
+            ElevatedButton(onPressed: (){}, child:Text("PRESS ME")),
+
+
+            Text("THIS IS COLUMN DEMO",style: TextStyle(fontSize: 45.30,  color: Colors.teal,),),
+            ElevatedButton(onPressed: (){}, child:Text("PRESS ME")),
+          ],
         ),
       )
     );
