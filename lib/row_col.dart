@@ -8,6 +8,8 @@ class myapp2 extends StatelessWidget{
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+
           children: <Widget>[
             Text("THIS IS COLUMN DEMO",style: TextStyle(fontSize: 15.30,  color: Colors.teal,),),
             ElevatedButton(onPressed: (){}, child:Text("PRESS ME")),
@@ -17,7 +19,6 @@ class myapp2 extends StatelessWidget{
 
             Text("THIS IS COLUMN DEMO",style: TextStyle(fontSize: 35.30,  color: Colors.teal,),),
             ElevatedButton(onPressed: (){}, child:Text("PRESS ME")),
-
 
             Text("THIS IS COLUMN DEMO",style: TextStyle(fontSize: 45.30,  color: Colors.teal,),),
             ElevatedButton(onPressed: (){}, child:Text("PRESS ME")),
