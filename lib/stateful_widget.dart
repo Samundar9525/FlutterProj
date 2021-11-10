@@ -8,7 +8,8 @@ class myapp3 extends StatefulWidget {
 
 class _myapp3State extends State<myapp3> {
   @override
-  String text="Welcome Sam";
+  String text1='Welcome Sam';
+  String text2='WELCOME SAMUNDAR';
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Stateful_Demo"),) ,
@@ -16,7 +17,7 @@ class _myapp3State extends State<myapp3> {
       child:Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(text,textScaleFactor: 2.0,),
+          Text(text1,textScaleFactor: 2.0,),
           SizedBox(
             height: 30.0,
           ),
@@ -24,12 +25,35 @@ class _myapp3State extends State<myapp3> {
             color: Colors.blue,
             textColor: Colors.white,
             onPressed: (){
-              text="Tune Daba Diya Yaar";
+              text2='WELCOME SAMUNDAR';
+              text1="Button is Pressed";
               setState(() {
               });
             },
-            child: Text("DABA YAAR"),
+            child: Text("Press me"),
+          ),
+
+          SizedBox(
+            height: 200.0,
+          ),
+
+          Text(text2,textScaleFactor: 2.0,),
+          SizedBox(
+            height: 30.0,
+          ),
+          FlatButton(
+            color: Colors.blue,
+            textColor: Colors.white,
+            onPressed: (){
+              text1='Welcome Sam';
+              text2="Phir Button is Pressed";
+              setState(() {
+              });
+            },
+            child: Text("Press me"),
           )
+
+
         ],
       )
     )
