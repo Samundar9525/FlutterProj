@@ -23,3 +23,7 @@
 ![image](https://user-images.githubusercontent.com/71628177/138809963-84e235f2-94dd-41d3-b45f-d9428a340ca0.png)
 
 ![image](https://user-images.githubusercontent.com/71628177/138810177-45af6144-eee2-4d41-8a9a-aa460c61afc5.png)
+
+# Creating UI with Colum and Row (ALignment of Widgets):
+![image](https://user-images.githubusercontent.com/71628177/141496709-6e36f65d-d7e2-4116-88fa-79e14a8f23c4.png)
+
