@@ -13,8 +13,7 @@ class _myapp4State extends State<myapp4> {
   String text2="Mukesh Patel";
   String text3="Abhijeet Chakar.";
   String text4="Sabbir Alam  ";
-  String text5="Ghanshyam";
-  String tem="  Calling";
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("image and row demo")),
