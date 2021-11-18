@@ -12,7 +12,7 @@ class myapp5 extends StatefulWidget {
 }
 
 class _myapp5State extends State<myapp5> {
-  var api = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian";
+  var api = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood";
   var res, food;
 
   @override
@@ -38,35 +38,28 @@ class _myapp5State extends State<myapp5> {
                   itemCount: food.length,
                   itemBuilder: (context, index) {
                     var foods = food[index];
-                    return Container(
-                      height: 100,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: ListTile(
-                          trailing: Icon(Icons.circle),
-                          leading: Hero(
-                              tag: foods["idMeal"],
-                              child: CircleAvatar(
-                                radius: 50,
-
-                                backgroundImage:
-                                    NetworkImage(foods['strMealThumb']),
-                              )),
-                          title: Text("${foods["strMeal"]}",
-                              style: TextStyle(fontSize: 20, color: Colors.blue)),
-                          subtitle: Text("id: ${foods["idMeal"]}",
-                              style: TextStyle(fontSize: 14, color: Colors.black)),
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => fooddetail(foods: foods),
-                                fullscreenDialog: true,
-                              ),
-                            );
-                          },
-                        ),
-                      ),
+                    return ListTile(
+                      trailing: Icon(Icons.circle),
+                      leading: Hero(
+                          tag: foods["idMeal"],
+                          child: CircleAvatar(
+                            radius: 50,
+                            backgroundImage:
+                                NetworkImage(foods['strMealThumb']),
+                          )),
+                      title: Text("${foods["strMeal"]}",
+                          style: TextStyle(fontSize: 20, color: Colors.blue)),
+                      subtitle: Text("id: ${foods["idMeal"]}",
+                          style: TextStyle(fontSize: 14, color: Colors.black)),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => fooddetail(foods: foods),
+                            fullscreenDialog: true,
+                          ),
+                        );
+                      },
                     );
                   },
                 )
@@ -74,3 +67,7 @@ class _myapp5State extends State<myapp5> {
         ));
   }
 }
+
+
+
+

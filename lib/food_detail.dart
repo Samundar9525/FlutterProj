@@ -22,23 +22,21 @@ class fooddetail extends StatelessWidget {
                   backgroundImage: NetworkImage(foods['strMealThumb']),
                 )),
             SizedBox(
-              height:30.0,
+              height: 30.0,
             ),
             Text("ID :${foods['idMeal']}",
-              style:TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.w700,
-            )
-            ),
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                )),
             SizedBox(
-              height:10.0,
+              height: 10.0,
             ),
             Text("Item :${foods['strMeal']}",
-            style:TextStyle(
-              fontSize: 25,
-              fontWeight: FontWeight.w700,
-            )
-            )
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.w700,
+                ))
           ],
         ),
       ),

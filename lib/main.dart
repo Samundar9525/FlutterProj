@@ -4,6 +4,10 @@ import 'package:femo/row_col.dart';
 import 'package:femo/stateful_widget.dart';
 import 'package:femo/image_with_row.dart';
 import 'package:femo/listview_builder.dart';
+import 'grid view.dart';
+import 'login.dart';
+import 'package:femo/util/routes.dart';
+import 'package:femo/home.dart';
 void main() {
   runApp(MyApp());
 }
@@ -16,7 +20,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: myapp5(),
+      initialRoute: MyRoutes.homeroute,
+      routes: {
+        MyRoutes.loginroute:(context)=>login(),
+        MyRoutes.homeroute:(context)=>home(),
+    },
     );
   }
 }
