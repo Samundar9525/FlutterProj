@@ -1,3 +1,4 @@
+import 'package:femo/gridHome.dart';
 import 'package:flutter/material.dart';
 import 'package:femo/homepage.dart';
 import 'package:femo/row_col.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       routes: {
         MyRoutes.loginroute:(context)=>login(),
         MyRoutes.homeroute:(context)=>home(),
+        MyRoutes.gridview:(context)=>griditems(),
     },
     );
   }

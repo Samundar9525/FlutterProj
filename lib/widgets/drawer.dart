@@ -1,3 +1,4 @@
+import 'package:femo/util/routes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -22,6 +23,7 @@ class MyDrawer extends StatelessWidget {
             )),
 
             ListTile(
+              onTap: (){Navigator.pushNamed(context, MyRoutes.gridview);},
               leading: Icon(CupertinoIcons.home,color: Colors.white,),
               title: Text("Home",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),textScaleFactor: 1.3,),
             ),
